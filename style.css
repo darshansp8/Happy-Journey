@@ -22,15 +22,17 @@ html{
     background-position: bottom;
 }
 
-.header a{
+/* .header a{
     text-decoration: none;
     color: white;
-}
+} */
 
 .header__content{
     padding: 5rem;
 }
 .header__title{
+    text-decoration: none;
+    color: white;
     font-size: 3rem;
     letter-spacing: .2rem;
     font-family: 'Pacifico', cursive;
@@ -368,4 +370,99 @@ html{
     height: 50vh;
     object-fit: cover;
     display: block;
+}
+
+/*Contact Us*/
+
+.contactus__title{
+    height: 80vh;
+    background-image: linear-gradient(90deg, rgba(8, 174, 234, .9) 0%, rgba(42, 245, 152, .8) 50%),
+                        url("images/img-5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contactus__title .header__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+}
+
+.contactus__form{
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10rem;
+    background-color: azure;
+}
+
+.form__control{
+    /* width: 30%; */
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+}
+
+.form__group{
+    margin: 1rem 0;
+    padding-top: 1rem;
+    position: relative;
+    /* background-color: red; */
+}
+
+.form__group input{
+    width: 95%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #686868;
+    color: #3d3d3d;
+    font-size: 1.3rem;
+}
+
+.form__input:focus{
+    outline: none;
+    border-bottom: 3px solid #e75480;
+    font-size: 1.3rem;
+}
+
+.form__label{
+    opacity: 0;
+    position: absolute;
+    bottom: .5rem;
+    left: .8rem;
+    color: #3d3d3d;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    transition: all .2s ease-in-out;
+}
+
+.form__input:focus + .form__label,
+.form__input.not-empty + .form__label {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.form__input::placeholder{
+    font-size: 1.3rem;
+}
+
+.form__group button{
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #e75480;
+    color: #fefefe;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+
+.map{
+    width: 100%;
 }
