@@ -16,7 +16,7 @@ html{
     height: 80vh;
     width: 100%;
     background-image: linear-gradient(to right bottom, rgba(231, 84, 128, 1), rgba(228, 34, 92, .3)), 
-                        url(images/header.jpg);
+                        url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
