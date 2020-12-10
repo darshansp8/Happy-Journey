@@ -493,7 +493,7 @@ html{
     transform: scale(2);
 }
 
-.header__content .header__title{
+.signin__header .header__content .header__title{
     position: absolute;
     top: 50%;
     left: 60%;
